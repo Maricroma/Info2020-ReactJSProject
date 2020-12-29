@@ -1,4 +1,4 @@
-# Final Project for Informatorio 2020, Resistencia, Chaco. - ReactJS Web App consuming Data from a Open API.-
+# Final Project for Informatorio 2020, Resistencia, Chaco. - ReactJS Web App consuming Data from an Open API.-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

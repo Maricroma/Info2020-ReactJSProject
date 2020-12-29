@@ -1,14 +1,16 @@
 import { Component } from "react";
 import Banner from '../components/Banner';
 import CharacterList from "../components/CharacterList";
+import '../App.css';
 
-class Home extends Component {
+class SearchCharacter extends Component {
 
-  state = {
-      loading:true,
-      error:null,
-      data: {},
-  }
+    state = {
+        loading:true,
+        error:null,
+        data: {},
+    };
+
 
   componentDidMount(){
     this.getCharacters();
@@ -31,16 +33,18 @@ class Home extends Component {
       this.setState({loading:false, error:error});
     }
   }
-   
+
+  
   render() {
-    
+    let search = this.props.searchTag;
+
     return (
       <>
-      <div className="container" style={{marginLeft:"15%"}}>
+      <div className="container searchCharDim">
 
         <Banner/>
 
-        {!this.state.loading && <CharacterList characters={this.state.data}></CharacterList>}
+        {!this.state.loading && <CharacterList characters={this.state.data} search={search}></CharacterList>}
 
         {this.state.loading && <h6 className="text-center">Loading...</h6>}
 
@@ -54,4 +58,4 @@ class Home extends Component {
 
 
 
-export default Home;
+export default SearchCharacter;

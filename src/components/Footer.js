@@ -5,7 +5,7 @@ function Footer() {
 
         return(
             <>
-            <FooterContainer className="main-footer"> 
+            <FooterContainer className="main-footer" > 
                 <div className="footer-middle">
                     <div className="container">
                         <div className="footer-bottom">

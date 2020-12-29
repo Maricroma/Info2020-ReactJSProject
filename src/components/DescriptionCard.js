@@ -49,7 +49,7 @@ class DescriptionCard extends Component {
 
         return (
             <>
-            <div className="card mb-2 bg-dark text-white"  style={{"marginTop":100, "height":670}}>
+            <div className="card mb-2 bg-dark text-white border border-secondary" style={{"marginTop":70, "height":670}}>
                 <div className="row g-0">
                     <div className="col-lg-4 col-md-7 col-sm-4 col-xs-12 ml-4 mt-4">
                     <br/>

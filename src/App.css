@@ -1,6 +1,11 @@
 :root {
-    --mainDark: #343a40; 
+    --mainDark: #111213; 
     --mainWhite: #ffffff;
     --mainGrey: #5c5e61;
     --mainLightGrey: rgba(172,172,172);
+}
+
+.searchCharDim {
+    min-height: calc(100vh - 140px);
+    margin-left: 15%;
 }

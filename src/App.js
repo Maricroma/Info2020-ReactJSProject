@@ -6,21 +6,37 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Description from './pages/Description'
 import NavBar from './components/NavBar';
+import SearchCharacter from './components/SearchCharacter';
 
 
 class App extends Component {
+
+  state= {
+    searchTag: ''
+  }
+
+  handleSearch= (search) => {
+    this.setState({searchTag: search})
+  }
   
     render() {
+
+      const searchTag = this.state.searchTag;
+
       return (
-        
-        <BrowserRouter>
-        <NavBar/>
-          <Switch>
-              <Route exact path='/' component={Home}/>
-              <Route exact path='/description/:handle' component={Description}/>
-          </Switch>
-          <Footer/>
-        </BrowserRouter>
+        <div>
+          <BrowserRouter>
+            <NavBar handleSearch= {this.handleSearch}/>
+            <Switch>
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/description/:handle' component={Description}/>
+                <Route exact path='/search/:handle'>
+                  <SearchCharacter searchTag= {searchTag}/>
+                </Route>
+            </Switch>
+            <Footer/>
+          </BrowserRouter>
+        </div>
         
       );
     }

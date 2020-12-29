@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Final Project for Informatorio 2020, Resistencia, Chaco. - ReactJS Web App consuming Data from a Open API.-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
